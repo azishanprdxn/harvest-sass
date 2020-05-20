@@ -1,0 +1,202 @@
+/*media query for 1100px starts here*/
+@media only screen and (max-width: 1100px) {
+  footer {
+    .contact-flex {
+      .contact-flexbox {
+        width: 50%;
+      }
+    }
+  }
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+
+  // Header Section
+  header {
+    .header-flex {
+
+      // SiteLogo
+      .sitelogo {
+        width: 100%;
+      }
+
+      // Nav Bar
+      nav {
+        max-height: 0;
+        width: 100%;
+        transition: .2s;
+
+        ul {
+          padding-bottom: 12px;
+
+          li {
+            display: block;
+            padding: 12px 0;
+            text-align: left;
+          }
+        }
+      }
+
+      // Social Links
+      .social-links {
+        display: none;
+      }
+
+      // Hamburger
+      .hamburger {
+        display: block;
+      }
+    }
+  }
+
+  // Banner Section
+  .banner {
+    .content {
+      width: 100%;
+      left: 0;
+    }
+
+    .read-more {
+      text-align: center;
+      a {
+        left: 0;
+      }
+    }
+  }
+
+  .slideshow-container {
+    .prev { left: 12px; }
+    .next { right: 12px; }
+  }
+
+  // Help Section
+  .help {
+    p {
+      width: 80%;
+    }
+  }
+
+  // Accordion Section
+  .accordion-section {
+    width: 80%;
+  }
+
+  // Clients Section
+  .clients {
+    .client-flex {
+      width: 80%;
+
+      figure {
+        width: 33.33%;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  // Affiliations Section
+  .affiliations {
+    .affiliation-flex {
+      width: 80%;
+
+      .affiliation-flexbox {
+        width: 50%;
+      }
+    }
+  }
+  
+  // Get in Touch Section
+  .get-in-touch {
+    .flex-container {
+      width: 80%;
+
+      .flexbox {
+        width: 100%;
+      }
+    }
+  }
+
+  // To the Top Button
+  .to-the-top {
+    button {
+      font-size: 18px;
+    }
+  }
+
+  // Footer Section
+  footer {
+    .contact-flex {
+      width: 80%;
+    }
+  }
+}
+
+/*media query for 425px starts here*/
+@media only screen and (max-width: 425px) {
+
+  // Banner Section
+  .slideshow-container {
+    .prev { left: 0; }
+    .next { right: 0; }
+  }
+
+  // Help Section
+  .help {
+    p {
+      width: 95%;
+    }
+  }
+
+  // Accordion Section
+  .accordion-section {
+    width: 95%;
+  }
+
+  // Clients Section
+  .clients {
+    .client-flex {
+      width: 95%;
+
+      figure {
+        width: 100%;
+      }
+    }
+  }
+  
+  // Affiliations Section
+  .affiliations {
+    .affiliation-flex {
+      width: 90%;
+
+      .affiliation-flexbox {
+        width: 100%;
+      }
+    }
+  }
+
+  // Get in Touch Section
+  .get-in-touch {
+    .flex-container {
+      width: 95%;
+    }
+  }
+
+  // To the Top Section
+  .to-the-top {
+    button {
+      font-size: 12px;
+    }
+  }
+
+  // Footer Section
+  footer {
+    .contact-flex {
+      width: 95%;
+
+      .contact-flexbox {
+        width: 100%;
+        padding-bottom: 32px;
+      }
+    }
+  }
+}

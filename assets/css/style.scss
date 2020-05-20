@@ -1,0 +1,29 @@
+@import './reset';
+
+/* for wrapper */
+.wrapper {
+  max-width: 1440px;
+  width: 97%;
+  margin: 0 auto;
+}
+
+h2 {
+  padding-left: 14px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@import './variables';
+@import './partials';
+@import './header';
+@import './main';
+@import './footer';
+@import './animation';
+@import './media';

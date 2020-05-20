@@ -1,0 +1,93 @@
+footer {
+  background-color: #3c3b3b;
+  color: $secondary-color;
+
+  a {
+    color: $secondary-color;
+    font-size: 12px;
+  }
+
+  // Contact Flex
+  .contact-flex {
+    @extend %flexible-display;
+    width: 60%;
+    padding: 66px 0 24px 0;
+    margin: 0 auto;
+
+    .contact-flexbox {
+      width: 35%;
+
+      h4 {
+        padding-bottom: 16px;
+        font-weight: 600;
+      }
+
+      li {
+        display: block;
+        padding: 4px 24px 4px 0;
+
+        a {
+          &[href]:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .phone {
+          &:before {
+            content: '\f095';
+            display: inline-block;
+            margin-right: 4px;
+            font-family: "fontawesome";
+            font-size: 12px;
+          }
+        }
+
+        .mail {
+          &:before {
+            content: '\f0e0';
+            display: inline-block;
+            margin-right: 4px;
+            font-family: "fontawesome";
+            font-size: 12px;
+          }
+        }
+
+        .address {
+          &:before {
+            content: '\f041';
+            display: inline-block;
+            margin-right: 8px;
+            font-family: "fontawesome";
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  // Copyright
+  .copyright {
+    padding: 4px 0 19px 0;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  // Social Links
+  .social-links {
+    padding: 25px 0;
+    text-align: center;
+
+    a {
+      margin: 0 4px;
+      font-size: 21px;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}
