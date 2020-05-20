@@ -1,0 +1,83 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: $secondary-color;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  z-index: 1;
+  overflow: hidden;
+
+  .header-flex {
+    @extend %flexible-display;
+
+    span {
+      display: none;
+    }
+
+    // SiteLogo
+    .sitelogo {
+      width: 10%;
+      margin: 8px 0;
+    }
+
+    // Nav Bar
+    nav {
+      width: 80%;
+      margin: auto 0;
+      font-size: 10px;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+
+      li {
+        margin: 0 13px;
+
+        a.active {
+          color: $primary-color;
+        }
+
+        a {
+          color: #000;
+
+          &:hover:not(.active) {
+            color: $primary-color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    // Social Icons
+    .social-links {
+      width: 10%;
+      margin: auto 0;
+      text-align: end;
+
+      li {
+        margin: 0 2px;
+
+        a {
+          color: $primary-color;
+          font-size: 12px;
+
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+
+    // Hamburger
+    .hamburger {
+      display: none;
+      position: absolute;
+      right: 22px;
+      top: 14px;
+
+      a {
+        color: $primary-color;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
