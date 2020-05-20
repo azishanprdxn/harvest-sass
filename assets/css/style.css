@@ -139,6 +139,7 @@ header .social-links a:hover { color: #000; }
 .hamburger a {
   color: #f46239;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .hamburger span { display: none; }
