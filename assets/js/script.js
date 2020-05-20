@@ -1,6 +1,42 @@
 /* Author: Zishan Ansari */
 'use strict';
 
+// Hamburger Function Starts -------------------------
+var hamburger = document.getElementsByClassName('hamburger')[0];
+var nav = document.getElementsByTagName('nav')[0];
+var main = document.getElementsByTagName('main')[0];
+var hamburgerIcon = hamburger.children[0];
+
+function toggleNavigation() {
+	if (nav.style.maxHeight) {
+		hideNavigation();
+	} else {
+		showNavigation();
+	}
+}
+
+// Hides the Nav Bar when clicked outside Header
+main.addEventListener('click', function () {
+	hideNavigation();
+});
+
+// Function for Showing Nav Bar
+function showNavigation() {
+	nav.style.maxHeight = nav.scrollHeight + 'px';
+	hamburgerIcon.setAttribute('class', 'fa fa-times');
+	hamburgerIcon.style.transform = 'rotate(90deg)';
+	hamburgerIcon.style.transition = '.2s';
+}
+
+// Function for Hiding Nav Bar
+function hideNavigation() {
+	nav.style.maxHeight = null;
+	hamburgerIcon.setAttribute('class', 'fa fa-bars');
+	hamburgerIcon.style.transform = 'rotate(0)';
+	hamburgerIcon.style.transition = '.2s';
+}
+// ---------------------------------------------------
+
 // Banner Slider Starts ------------------------------
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -18,17 +54,6 @@ function showSlides(n) {
 		slides[i].style.display = 'none';
 	}
 	slides[slideIndex - 1].style.display = 'block';
-}
-// ---------------------------------------------------
-
-// Hamburger Function Starts -------------------------
-function toggleNavigation() {
-	var nav = document.getElementsByTagName('nav')[0];
-	if (nav.style.maxHeight) {
-		nav.style.maxHeight = null;
-	} else {
-		nav.style.maxHeight = nav.scrollHeight + 'px';
-	}
 }
 // ---------------------------------------------------
 
