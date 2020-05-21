@@ -2,7 +2,7 @@
 'use strict';
 
 // Hamburger Function Starts -------------------------
-var hamburger = document.getElementsByClassName('hamburger')[0];
+var hamburger = document.getElementsByClassName('header-flex__hamburger')[0];
 var nav = document.getElementsByTagName('nav')[0];
 var main = document.getElementsByTagName('main')[0];
 var hamburgerIcon = hamburger.children[0];
